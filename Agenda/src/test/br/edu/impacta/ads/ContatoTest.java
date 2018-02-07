@@ -1,6 +1,6 @@
 package test.br.edu.impacta.ads;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,5 +23,10 @@ public class ContatoTest {
 	public void testTest() {
 		cdao.inserir(contato);
 		assertTrue("O contato não foi adicionado.", cdao.existe(contato));
+	}
+	
+	@Test
+	public void testflaviat() {
+		assertEquals(100, 10*10 );
 	}
 }
